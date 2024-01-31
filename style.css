@@ -1,0 +1,42 @@
+@media (max-width: 1210px){
+    #menuWeb{
+        display: none;
+    }
+
+    #menuMobile{
+        display: block;
+    }
+}
+
+@media (max-width: 1052px){
+    #divImagem{
+        display: none;
+    }
+    
+    #divPai{
+        justify-content: center;
+    }
+
+    #divFilho{
+        align-items: center;
+    }
+
+    #divContent{
+        align-items: center;
+    }
+
+    #textProgram{
+        font-size: 48px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 688px){
+    #textProgram{
+        text-align: left;
+    }
+
+    #divContent{
+        align-items: flex-start;
+    }
+}
