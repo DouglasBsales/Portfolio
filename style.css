@@ -3,7 +3,7 @@
         display: none;
     }
 
-    #menuMobile{
+    #mobileMenu{
         display: block;
     }
 }
@@ -38,5 +38,28 @@
 
     #divContent{
         align-items: flex-start;
+    }
+}
+
+@media (max-width: 540px){
+    #textProgram{
+        font-size:40px
+    }
+
+    #pPessoas{
+        font-size: 16px;
+    }
+
+    #textPort{
+        font-size: 16px
+    }
+
+    #dougSales{
+        font-size: 30px
+    }
+
+    #menuMobile{
+        width:40px;
+        height: 40px;
     }
 }

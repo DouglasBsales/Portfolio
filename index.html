@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Douglas sales</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="public/portfolio.png" type="image.png">
   </head>
@@ -14,11 +13,16 @@
       <div class="flex flex-row items-center justify-between">
         <div class="flex flex-row items-center">
           <img src="public/Group.svg" alt="icone" />
-          <h1 class="text-4xl text-[#445964] font-bold pl-2">Douglas sales</h1>
+          <h1 class="text-4xl text-[#445964] font-bold pl-2" id="dougSales">Douglas sales</h1>
         </div>
 
-        <div class="hidden" id="menuMobile">
-          <img src="public/menu.svg" alt="menuMobile" class="w-[55px] h-[55px] cursor-pointer">
+        <div class=" hidden" id="mobileMenu" > 
+          <button onclick="menuShow()" class="flex items-cente">
+            <img src="public/menu.svg" 
+            alt="menuMobile" 
+            class="w-[55px] h-[55px] cursor-pointer" 
+            id="menuMobile">
+          </button>
         </div>
 
         <div class="flex flex-row items-center gap-[60px] font-medium" id="menuWeb">
@@ -34,11 +38,11 @@
       <div class="w-full flex flex-row pt-[50px]" id="divPai">
         <div class=" w-[705px] h-[697px] flex flex-col justify-between" id="divFilho">
           <div class="flex flex-col pt-[50px]" id="divContent">
-            <p class="font-medium text-2xl text-[#445964]">Olá pesoas,</p>
+            <p class="font-medium text-2xl text-[#445964]" id="pPessoas">Olá pesoas,</p>
             <p class="text-7xl font-bold text-[#445964] uppercase" id="textProgram">
               Eu sou um programador
             </p>
-            <p class="font-medium text-2xl text-[#445964] pt-[8px]">
+            <p class="font-medium text-2xl text-[#445964] pt-[8px]" id="textPort">
               Seja bem-vindo ao meu portifólio website
             </p>
           </div>
@@ -80,4 +84,5 @@
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

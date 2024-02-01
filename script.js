@@ -1,4 +1,9 @@
-let iconeMenuNormal = document.getElementById('meuMobile')
-iconeMenuNormal.addEventlistener('click', function(){
-console.log('click no ícone do menu')
-    iconeMenuNormal.src = 'src/public/x.svg'})
+function menuShow(){
+    let iconeMenu = document.getElementById('menuMobile');
+    if(iconeMenu.src.includes('menu.svg')){
+        iconeMenu.src = "public/x.svg"
+    }
+    else {
+        iconeMenu.src = 'public/menu.svg'
+    }
+}
