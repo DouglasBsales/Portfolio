@@ -9,6 +9,12 @@
     <link rel="shortcut icon" href="public/portfolio.png" type="image.png">
   </head>
   <body class="font-Roboto">
+    <div 
+    class="absolute w-full h-full bg-[#191919B2]" 
+    id="pageSobreBody" 
+    style="visibility: hidden">
+  </div>
+
     <div class="w-full max-w-[1440px] m-auto flex flex-col pt-[69px] pl-[10px]">
       <div class="flex flex-row items-center justify-between">
         <div class="flex flex-row items-center">
@@ -24,6 +30,29 @@
             id="menuMobile">
           </button>
         </div>
+        
+        <div class="w-[10px] h-[400px] absolute right-[0px] top-[69px]  bg-[#fff] rounded-l-md font-semibold" id="pageMenuMobile"
+        style="visibility: hidden">
+
+          <div class="flex justify-end pt-[10px] pr-[10px]">
+            <button>
+              <img 
+              src="public/x-mobile.svg" 
+              alt="iconeFecharMenu"
+              class="w-[25px] h-[25px] "
+              onclick="fecharPage()"
+              >
+            </button>
+          </div>
+
+          <div class="flex flex-col gap-[20px] pl-[10px] mt-[10px]">
+            <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md"id="link1">Home</a>
+            <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md">Sobre</a>
+            <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md" id="link1">Portifólio</a>
+            <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md">Serviços</a>
+            <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md">Resumo</a>
+          </div>
+        </div>
 
         <div class="flex flex-row items-center gap-[60px] font-medium" id="menuWeb">
           <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Home</a>
@@ -38,12 +67,12 @@
       <div class="w-full flex flex-row pt-[50px]" id="divPai">
         <div class=" w-[705px] h-[697px] flex flex-col justify-between" id="divFilho">
           <div class="flex flex-col pt-[50px]" id="divContent">
-            <p class="font-medium text-2xl text-[#445964]" id="pPessoas">Olá pesoas,</p>
+            <p class="font-medium text-2xl text-[#445964]" id="pPessoas">Olá pessoas,</p>
             <p class="text-7xl font-bold text-[#445964] uppercase" id="textProgram">
               Eu sou um programador
             </p>
             <p class="font-medium text-2xl text-[#445964] pt-[8px]" id="textPort">
-              Seja bem-vindo ao meu portifólio website
+              Seja bem-vindo ao meu portfólio website
             </p>
           </div>
 

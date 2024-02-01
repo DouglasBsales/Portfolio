@@ -1,65 +1,66 @@
-@media (max-width: 1210px){
-    #menuWeb{
-        display: none;
-    }
 
-    #mobileMenu{
-        display: block;
-    }
+@media (max-width: 1210px) {
+  #menuWeb {
+    display: none;
+  }
+
+  #mobileMenu {
+    display: block;
+  }
 }
 
-@media (max-width: 1052px){
-    #divImagem{
-        display: none;
-    }
-    
-    #divPai{
-        justify-content: center;
-    }
+@media (max-width: 1052px) {
+  #divImagem {
+    display: none;
+  }
 
-    #divFilho{
-        align-items: center;
-    }
+  #divPai {
+    justify-content: center;
+  }
 
-    #divContent{
-        align-items: center;
-    }
+  #divFilho {
+    align-items: center;
+  }
 
-    #textProgram{
-        font-size: 48px;
-        text-align: center;
-    }
+  #divContent {
+    align-items: center;
+  }
+
+  #textProgram {
+    font-size: 48px;
+    text-align: center;
+  }
 }
 
-@media (max-width: 688px){
-    #textProgram{
-        text-align: left;
-    }
+@media (max-width: 688px) {
+  #textProgram {
+    text-align: left;
+  }
 
-    #divContent{
-        align-items: flex-start;
-    }
+  #divContent {
+    align-items: flex-start;
+  }
 }
 
-@media (max-width: 540px){
-    #textProgram{
-        font-size:40px
-    }
+@media (max-width: 540px) {
+  #textProgram {
+    font-size: 40px;
+  }
 
-    #pPessoas{
-        font-size: 16px;
-    }
+  #pPessoas {
+    font-size: 16px;
+  }
 
-    #textPort{
-        font-size: 16px
-    }
+  #textPort {
+    font-size: 16px;
+  }
 
-    #dougSales{
-        font-size: 30px
-    }
+  #dougSales {
+    font-size: 30px;
+  }
 
-    #menuMobile{
-        width:40px;
-        height: 40px;
-    }
+  #menuMobile {
+    width: 40px;
+    height: 40px;
+  }
 }
