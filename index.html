@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Douglas sales</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./media-queries/style-queries-index.css">
     <link rel="shortcut icon" href="public/portfolio.png" type="image.png">
   </head>
-  <body class="font-Roboto">
-    <div 
+  <body class="font-Roboto">  <!-- div abaixo do body contendo a "opacidade ao abrir o modal"-->
+    <div  
     class="absolute w-full h-full bg-[#191919B2]" 
     id="pageSobreBody" 
     style="visibility: hidden">
@@ -46,8 +46,8 @@
           </div>
 
           <div class="flex flex-col gap-[20px] pl-[10px] mt-[10px]">
-            <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md"id="link1">Home</a>
-            <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md">Sobre</a>
+            <a href="index.html" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md"id="link1">Home</a>
+            <a href="pages/about-me.html" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md">Sobre</a>
             <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md" id="link1">Portifólio</a>
             <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md">Serviços</a>
             <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md">Resumo</a>
@@ -56,7 +56,7 @@
 
         <div class="flex flex-row items-center gap-[60px] font-medium" id="menuWeb">
           <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Home</a>
-          <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Sobre</a>
+          <a href="pages/about-me.html" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Sobre</a>
           <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Portifólio</a>
           <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Serviços</a>
           <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Resumo</a>
@@ -78,7 +78,7 @@
 
           <div>
             <button class="bg-[#263138] py-[19px] px-[31px] rounded-[20px]">
-              <p class="font-bold text-white text-2xl">Saiba mais sobre mim</p>
+              <a href="pages/about-me.html" class="font-bold text-white text-2xl">Saiba mais sobre mim</a>
             </button>
           </div>
 
@@ -113,5 +113,5 @@
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="./scripts/script-menu.js"></script>
 </html>
