@@ -1,5 +1,6 @@
 @media (max-width: 768px) {
   #skils {
     justify-content: center;
+    padding-bottom: 60px;
   }
 }
