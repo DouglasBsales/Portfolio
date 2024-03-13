@@ -1,4 +1,12 @@
-.closeMenu{
-    position:relative;
-    right: 0px;
+.closeMenu {
+  position: relative;
+  right: 0px;
+}
+
+.itemSelected {
+  border-bottom: 2px solid #445964;
+}
+
+.shadow {
+  box-shadow: -2px 4px 27px 4px rgba(204, 204, 204, 1);
 }

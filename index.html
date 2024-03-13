@@ -5,80 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Douglas sales</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./media-queries/style-queries-index.css">
-    <link rel="shortcut icon" href="public/portfolio.png" type="image.png">
+    <link rel="stylesheet" href="./media-queries/style-queries-index.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="public/portfolio.png" type="image.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
-  <body class="font-Roboto">  <!-- div abaixo do body contendo a "opacidade ao abrir o modal"-->
-    <div  
-    class="absolute w-full h-full bg-[#191919B2]" 
-    id="pageSobreBody" 
-    style="visibility: hidden">
-  </div>
+  <body class="font-Roboto">
+    <!-- div abaixo do body contendo a "opacidade ao abrir o modal"-->
+    <div
+      class="absolute w-full h-full bg-[#191919B2]"
+      id="pageSobreBody"
+      style="visibility: hidden"
+    ></div>
 
     <div class="w-full max-w-[1440px] m-auto flex flex-col pt-[69px] pl-[10px]">
-      <div class="flex flex-row items-center justify-between">
+      <div class="w-full flex flex-row items-center justify-between bg-[#fff]">
         <div class="flex flex-row items-center">
           <img src="public/Group.svg" alt="icone" />
-          <h1 class="text-4xl text-[#445964] font-bold pl-2" id="dougSales">Douglas sales</h1>
+          <h1 class="text-4xl text-[#445964] font-bold pl-2" id="dougSales">
+            Douglas sales
+          </h1>
         </div>
 
-        <div class=" hidden" id="mobileMenu" > 
+        <div class="hidden" id="mobileMenu">
           <button onclick="menuShow()" class="flex items-cente">
-            <img src="public/menu.svg" 
-            alt="menuMobile" 
-            class="w-[55px] h-[55px] cursor-pointer" 
-            id="menuMobile">
+            <img
+              src="public/menu.svg"
+              alt="menuMobile"
+              class="w-[55px] h-[55px] cursor-pointer mr-[20px]"
+              id="menuMobile"
+            />
           </button>
         </div>
-        
-        <div class="w-[88px] h-[400px] absolute right-[0px] top-[69px]  bg-[#fff] rounded-l-md font-semibold" id="pageMenuMobile"
-        style="visibility: hidden">
 
+        <div
+          class="w-[88px] h-[400px] absolute right-[0px] top-[69px] bg-[#fff] rounded-l-md font-semibold"
+          id="pageMenuMobile"
+          style="visibility: hidden"
+        >
           <div class="flex justify-end pt-[10px] pr-[10px] pb-[10px]">
             <button>
-              <img 
-              src="public/x-mobile.svg" 
-              alt="iconeFecharMenu"
-              class="w-[35px] h-[35px] "
-              onclick="fecharPage()"
-              >
+              <img
+                src="public/x-mobile.svg"
+                alt="iconeFecharMenu"
+                class="w-[35px] h-[35px]"
+                onclick="fecharPage()"
+              />
             </button>
           </div>
 
           <div class="flex flex-col gap-[20px] pl-[10px] mt-[10px]">
-            <a href="index.html" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md"id="link1">Home</a>
-            <a href="pages/about-me.html" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md">Sobre</a>
-            <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md" id="link1">Portifólio</a>
-            <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md">Serviços</a>
-            <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white rounded-l-md">Resumo</a>
+            <a href="index.html" class="text-[#445964] p-[10px] itemSelected"
+              >Home</a
+            >
+
+            <a href="#" class="block text-[#445964] p-[10px] rounded-l-md"
+              >Sobre</a
+            >
+
+            <a href="#" class="block text-[#445964] p-[10px] rounded-l-md"
+              >Portifólio</a
+            >
+
+            <a href="#" class="block text-[#445964] p-[10px] rounded-l-md"
+              >Serviços</a
+            >
+
+            <a href="#" class="block text-[#445964] p-[10px] rounded-l-md"
+              >Resumo</a
+            >
           </div>
         </div>
 
-        <div class="flex flex-row items-center gap-[60px] font-medium" id="menuWeb">
-          <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Home</a>
-          <a href="pages/about-me.html" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Sobre</a>
-          <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Portifólio</a>
-          <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Serviços</a>
-          <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Resumo</a>
-          <a href="#" class="block text-[#445964] p-[10px] hover:bg-[#445964] hover:text-white">Contato</a>
+        <div
+          class="flex flex-row items-center gap-[60px] font-medium"
+          id="menuWeb"
+        >
+          <a href="#" class="block text-[#445964] p-[10px] itemSelected"
+            >Home</a
+          >
+
+          <a href="#" class="block text-[#445964] p-[10px]">Sobre</a>
+
+          <a href="#" class="block text-[#445964] p-[10px]">Portifólio</a>
+
+          <a href="#" class="block text-[#445964] p-[10px]">Serviços</a>
+
+          <a href="#" class="block text-[#445964] p-[10px]">Resumo</a>
+
+          <a href="#" class="block text-[#445964] p-[10px]">Contato</a>
         </div>
       </div>
 
       <div class="w-full flex flex-row pt-[50px]" id="divPai">
-        <div class=" w-[705px] h-[697px] flex flex-col justify-between" id="divFilho">
+        <div
+          class="w-[705px] h-[697px] flex flex-col justify-between"
+          id="divFilho"
+        >
           <div class="flex flex-col pt-[50px]" id="divContent">
-            <p class="font-medium text-2xl text-[#445964]" id="pPessoas">Olá pessoas,</p>
-            <p class="text-7xl font-bold text-[#445964] uppercase" id="textProgram">
+            <p class="font-medium text-2xl text-[#445964]" id="pPessoas">
+              Olá pessoas,
+            </p>
+
+            <p
+              class="text-7xl font-bold text-[#445964] uppercase"
+              id="textProgram"
+            >
               Eu sou um programador
             </p>
-            <p class="font-medium text-2xl text-[#445964] pt-[8px]" id="textPort">
+
+            <p
+              class="font-medium text-2xl text-[#445964] pt-[8px]"
+              id="textPort"
+            >
               Seja bem-vindo ao meu portfólio website
             </p>
           </div>
 
           <div>
             <button class="bg-[#263138] py-[19px] px-[31px] rounded-[20px]">
-              <a href="pages/about-me.html" class="font-bold text-white text-2xl">Saiba mais sobre mim</a>
+              <a href="#" class="font-bold text-white text-2xl"
+                >Saiba mais sobre mim</a
+              >
             </button>
           </div>
 
@@ -90,7 +141,10 @@
                 alt="github icon"
               />
             </a>
-            <a href="https://www.linkedin.com/in/douglas-sales-901898262/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/douglas-sales-901898262/"
+              target="_blank"
+            >
               <img
                 class="cursor-pointer"
                 src="public/Linkedin.svg"
@@ -103,12 +157,140 @@
                 src="public/Instagram.svg"
                 alt="instagram icon"
               />
-          </div>
             </a>
-      </div>
+          </div>
+        </div>
 
         <div class="w-[705px] h-[697px]" id="divImagem">
           <img src="public/Home_art 1.svg" alt="programmer" />
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center pt-[150px]">
+        <div class="w-[200px] h-[200px] mb-[50px]">
+          <img
+            src="../public/DG PERFIL.jpg"
+            alt="fotoPerfil"
+            class="border-4 border-[#445964] rounded-full"
+          />
+        </div>
+
+        <p class="font-bold text-[#445964] text-5xl">
+          Douglas
+          <span class="text-[#3A3A3A]">Sales</span>
+        </p>
+        <p
+          class="w-[74%] font-medium text-[18px] text-[#445964] text-center pt-[24px]"
+        >
+          Passionate about technology since always, through games and now with
+          programming. I currently work as a <strong>Front-End</strong>, looking
+          to develop my <strong>skills</strong> with the best technologies on
+          the <strong>market</strong> and willing to learn any technology that
+          can improve my <strong>performance</strong> and progress.
+        </p>
+
+        <p class="font-bold text-[#3A3A3A] text-5xl pt-[108px]">
+          Hard
+          <span class="text-[#445964]">Skils</span>
+        </p>
+
+        <div
+          class="flex gap-[50px] pt-[62px] pb-[50px]"
+          style="flex-wrap: wrap"
+          id="skils"
+        >
+          <div class="flex flex-col items-center">
+            <p class="font-bold text-[26px] text-[#445964]">HTML</p>
+            <div>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <p class="font-bold text-[26px] text-[#445964]">CSS</p>
+            <div>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <p class="font-bold text-[26px] text-[#445964]">JavaScript</p>
+            <div>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#DBDBDB]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#DBDBDB]"></i>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <p class="font-bold text-[26px] text-[#445964]">React</p>
+            <div>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#DBDBDB]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#DBDBDB]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-[150px] pb-[100px]">
+        <div class="flex gap-[91px]" id="meuPortfolio">
+          <div>
+            <p
+              class="text-[#263138] font-bold text-[64px]"
+              id="textPortofolio1"
+            >
+              Meu
+            </p>
+            <p
+              class="text-[#445964] font-bold text-[64px]"
+              id="textPortofolio2"
+            >
+              Portfólio
+            </p>
+          </div>
+
+          <div class="text-[24px] text-[#445964] font-medium pt-[100px]">
+            <p id="textTrab">
+              Estes são alguns dos trabalhos e <br />
+              projetos que já realizei
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center pt-[40px]">
+          <div class="w-[300px] h-[300px] items-center justify-center">
+            <div class="flex items-center justify-center border rounded-t-lg">
+              <img
+                src="public/calculdoraIphone.png"
+                alt="calculadoraIphone"
+                class="w-[250px]"
+              />
+            </div>
+            <div class="flex justify-center">
+              <button class="w-full bg-[#445960] rounded-b-lg">
+                <a
+                  href="https://douglasbsales.github.io/CalculadoraIphone/"
+                  target="_blank"
+                  class="block py-[10px] font-semibold text-white text-[24px]"
+                >
+                  Deploy
+                </a>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

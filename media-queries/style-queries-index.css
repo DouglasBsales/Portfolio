@@ -31,6 +31,33 @@
   }
 }
 
+@media (max-width: 768px) {
+  #skils {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 755px) {
+  #meuPortfolio {
+    display: block;
+  }
+
+  #textPortofolio1 {
+    font-size: 48px;
+  }
+
+  #textPortofolio2 {
+    font-size: 48px;
+  }
+
+  #textTrab {
+    font-size: 24px;
+    text-align: center;
+    margin-top: -30px;
+    padding-bottom: 20px;
+  }
+}
+
 @media (max-width: 688px) {
   #textProgram {
     text-align: left;

@@ -18,8 +18,4 @@ function fecharPage() {
   let pageOpenBody = document.getElementById("pageSobreBody");
   pageOpenBody.style.visibility = "hidden";
   pageOpenBody.style.opacity = "0";
-}
-
-let bgLink = document.getElementById("link1");
-bgLink.style.backgroundColor = "#445964";
-bgLink.style.color = "#fff";
+};
