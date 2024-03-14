@@ -18,4 +18,32 @@ function fecharPage() {
   let pageOpenBody = document.getElementById("pageSobreBody");
   pageOpenBody.style.visibility = "hidden";
   pageOpenBody.style.opacity = "0";
+}
+
+const divMenuWeb = document.getElementById("menuWeb");
+const linksDivMenuWeb = divMenuWeb.querySelectorAll("a");
+
+const divMenuMobile = document.getElementById("divMenuMobile");
+const linksDidvMenuMobile = divMenuMobile.querySelectorAll("a");
+
+let linksCores = (elemento) => {
+  elemento.addEventListener("click", (event) => {
+    linksDivMenuWeb.forEach((link) => {
+      link.classList.remove("itemSelected");
+    });
+    event.target.classList.add("itemSelected");
+  });
 };
+
+linksDivMenuWeb.forEach(linksCores);
+
+let linksCoresMobile = (elemento) => {
+  elemento.addEventListener("click", (event) => {
+    linksDidvMenuMobile.forEach((link) => {
+      link.classList.remove("itemSelected");
+    });
+    event.target.classList.add("itemSelected");
+  });
+};
+
+linksDidvMenuMobile.forEach(linksCoresMobile);

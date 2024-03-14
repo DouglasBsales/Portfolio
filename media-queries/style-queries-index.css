@@ -31,6 +31,12 @@
   }
 }
 
+@media (max-width: 926px) {
+  #divCards {
+    gap: 150px;
+  }
+}
+
 @media (max-width: 768px) {
   #skils {
     justify-content: center;

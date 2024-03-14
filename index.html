@@ -16,7 +16,7 @@
   <body class="font-Roboto">
     <!-- div abaixo do body contendo a "opacidade ao abrir o modal"-->
     <div
-      class="absolute w-full h-full bg-[#191919B2]"
+      class="fixed w-full h-full bg-[#191919B2]"
       id="pageSobreBody"
       style="visibility: hidden"
     ></div>
@@ -57,26 +57,21 @@
             </button>
           </div>
 
-          <div class="flex flex-col gap-[20px] pl-[10px] mt-[10px]">
+          <div
+            class="flex flex-col gap-[20px] pl-[10px] mt-[10px]"
+            id="divMenuMobile"
+          >
             <a href="index.html" class="text-[#445964] p-[10px] itemSelected"
               >Home</a
             >
 
-            <a href="#" class="block text-[#445964] p-[10px] rounded-l-md"
-              >Sobre</a
-            >
+            <a href="#" class="block text-[#445964] p-[10px]">Sobre</a>
 
-            <a href="#" class="block text-[#445964] p-[10px] rounded-l-md"
-              >Portifólio</a
-            >
+            <a href="#" class="block text-[#445964] p-[10px]">Portifólio</a>
 
-            <a href="#" class="block text-[#445964] p-[10px] rounded-l-md"
-              >Serviços</a
-            >
+            <a href="#" class="block text-[#445964] p-[10px]">Serviços</a>
 
-            <a href="#" class="block text-[#445964] p-[10px] rounded-l-md"
-              >Resumo</a
-            >
+            <a href="#" class="block text-[#445964] p-[10px]">Resumo</a>
           </div>
         </div>
 
@@ -269,9 +264,17 @@
             </p>
           </div>
         </div>
-
-        <div class="flex justify-center pt-[40px]">
+        <!-- COMEÇO DOS CARDS DE PROJETOS -->
+        <div
+          class="flex justify-around pt-[100px] flex-wrap pb-[200px]"
+          id="divCards"
+        >
           <div class="w-[300px] h-[300px] items-center justify-center">
+            <div class="flex flex-col items-center pb-[10px]">
+              <p class="text-[#4E4E4E] font-bold text-4xl">Calculadora</p>
+              <p class="text-[#445964] text-2xl font-semibold">iPhone</p>
+            </div>
+
             <div class="flex items-center justify-center border rounded-t-lg">
               <img
                 src="public/calculdoraIphone.png"
@@ -283,6 +286,58 @@
               <button class="w-full bg-[#445960] rounded-b-lg">
                 <a
                   href="https://douglasbsales.github.io/CalculadoraIphone/"
+                  target="_blank"
+                  class="block py-[10px] font-semibold text-white text-[24px]"
+                >
+                  Deploy
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="w-[300px] h-[300px] items-center justify-center">
+            <div class="flex flex-col items-center pb-[10px]">
+              <p class="text-[#4E4E4E] font-bold text-4xl">Verificação de</p>
+              <p class="text-[#445964] text-2xl font-semibold">Usuários</p>
+            </div>
+
+            <div class="flex items-center justify-center border rounded-t-lg">
+              <img
+                src="public/FORMULARIO.png"
+                alt="fotoCriacaoConta"
+                class="w-[250px]"
+              />
+            </div>
+            <div class="flex justify-center">
+              <button class="w-full bg-[#445960] rounded-b-lg">
+                <a
+                  href="https://douglasbsales.github.io/Creat-a-new-account-Form/"
+                  target="_blank"
+                  class="block py-[10px] font-semibold text-white text-[24px]"
+                >
+                  Deploy
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="w-[300px] h-[300px] items-center justify-center">
+            <div class="flex flex-col items-center pb-[10px]">
+              <p class="text-[#4E4E4E] font-bold text-4xl">Controle de</p>
+              <p class="text-[#445964] text-2xl font-semibold">Usuários</p>
+            </div>
+
+            <div class="flex items-center justify-center border rounded-t-lg">
+              <img
+                src="public/userAdd.png"
+                alt="calculadoraIphone"
+                class="w-[250px]"
+              />
+            </div>
+            <div class="flex justify-center">
+              <button class="w-full bg-[#445960] rounded-b-lg">
+                <a
+                  href="https://douglasbsales.github.io/UserRegistration/"
                   target="_blank"
                   class="block py-[10px] font-semibold text-white text-[24px]"
                 >
