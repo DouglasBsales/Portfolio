@@ -21,9 +21,9 @@
       style="visibility: hidden"
     ></div>
 
-    <div class="w-full max-w-[1440px] m-auto flex flex-col pt-[69px] pl-[10px]">
-      <div class="w-full flex flex-row items-center justify-between bg-[#fff]">
-        <div class="flex flex-row items-center">
+    <div class="w-full max-w-[1440px] m-auto flex flex-col pl-[10px]" >
+      <div class="w-full flex flex-row items-center justify-between bg-[#fff] pt-[40px] pb-[40px] pl-[10px] fixedMenu border-b-2" >
+        <div class="flex flex-row items-center" >
           <img src="public/Group.svg" alt="icone" />
           <h1 class="text-4xl text-[#445964] font-bold pl-2" id="dougSales">
             Douglas sales
@@ -58,16 +58,16 @@
           </div>
 
           <div
-            class="flex flex-col gap-[20px] pl-[10px] mt-[10px]"
+            class="flex flex-col gap-[20px] pl-[10px] mt-[10px] "
             id="divMenuMobile"
           >
-            <a href="index.html" class="text-[#445964] p-[10px] itemSelected"
+            <a href="#divPai" class="text-[#445964] p-[10px] itemSelected"
               >Home</a
             >
 
-            <a href="#" class="block text-[#445964] p-[10px]">Sobre</a>
+            <a href="#aboutSection" class="block text-[#445964] p-[10px]">Sobre</a>
 
-            <a href="#" class="block text-[#445964] p-[10px]">Portifólio</a>
+            <a href="#portfolioSection" class="block text-[#445964] p-[10px]">Portifólio</a>
 
             <a href="#" class="block text-[#445964] p-[10px]">Serviços</a>
 
@@ -79,13 +79,13 @@
           class="flex flex-row items-center gap-[60px] font-medium"
           id="menuWeb"
         >
-          <a href="#" class="block text-[#445964] p-[10px] itemSelected"
+          <a href="#divPai" class="block text-[#445964] p-[10px] itemSelected"
             >Home</a
           >
 
-          <a href="#" class="block text-[#445964] p-[10px]">Sobre</a>
+          <a href="#aboutSection" class="block text-[#445964] p-[10px]">Sobre</a>
 
-          <a href="#" class="block text-[#445964] p-[10px]">Portifólio</a>
+          <a href="#portfolioSection" class="block text-[#445964] p-[10px]">Portfólio</a>
 
           <a href="#" class="block text-[#445964] p-[10px]">Serviços</a>
 
@@ -95,7 +95,7 @@
         </div>
       </div>
 
-      <div class="w-full flex flex-row pt-[50px]" id="divPai">
+      <div class="w-full flex flex-row pt-[150px]" id="divPai">
         <div
           class="w-[705px] h-[697px] flex flex-col justify-between"
           id="divFilho"
@@ -161,7 +161,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col items-center pt-[150px]">
+      <div class="flex flex-col items-center pt-[200px]" id="aboutSection">
         <div class="w-[200px] h-[200px] mb-[50px]">
           <img
             src="public/DG PERFIL.jpg"
@@ -240,7 +240,7 @@
         </div>
       </div>
 
-      <div class="pt-[150px] pb-[100px]">
+      <div class="pt-[150px] pb-[100px]" id="portfolioSection">
         <div class="flex gap-[91px]" id="meuPortfolio">
           <div>
             <p
@@ -351,4 +351,6 @@
     </div>
   </body>
   <script src="./scripts/script-menu.js"></script>
+  <script src="scripts/scriptRolagemMenu.js"></script>
+  
 </html>
