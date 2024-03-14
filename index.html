@@ -16,13 +16,13 @@
   <body class="font-Roboto">
     <!-- div abaixo do body contendo a "opacidade ao abrir o modal"-->
     <div
-      class="fixed w-full h-full bg-[#191919B2]"
+      class="fixed w-full h-full bg-[#191919B2] z-20"
       id="pageSobreBody"
-      style="visibility: hidden"
+      style="visibility: hidden;"
     ></div>
 
-    <div class="w-full max-w-[1440px] m-auto flex flex-col pl-[10px]" >
-      <div class="w-full flex flex-row items-center justify-between bg-[#fff] pt-[40px] pb-[40px] pl-[10px] fixedMenu border-b-2" >
+    <div class="w-full max-w-[1440px] m-auto flex flex-col pl-[10px] relative z-0F" >
+      <div class="w-full flex flex-row items-center justify-between bg-[#fff] pt-[40px] pb-[40px] pl-[10px] fixedMenu border-b-2 z-10" >
         <div class="flex flex-row items-center" >
           <img src="public/Group.svg" alt="icone" />
           <h1 class="text-4xl text-[#445964] font-bold pl-2" id="dougSales">
@@ -31,7 +31,7 @@
         </div>
 
         <div class="hidden" id="mobileMenu">
-          <button onclick="menuShow()" class="flex items-cente">
+          <button onclick="menuShow()" class="flex items-center">
             <img
               src="public/menu.svg"
               alt="menuMobile"
@@ -42,11 +42,31 @@
         </div>
 
         <div
-          class="w-[88px] h-[400px] absolute right-[0px] top-[69px] bg-[#fff] rounded-l-md font-semibold"
-          id="pageMenuMobile"
-          style="visibility: hidden"
+          class="flex flex-row items-center gap-[60px] font-medium"
+          id="menuWeb"
         >
-          <div class="flex justify-end pt-[10px] pr-[10px] pb-[10px]">
+          <a href="#divPai" class="block text-[#445964] p-[10px] itemSelected"
+            >Home</a
+          >
+
+          <a href="#aboutSection" class="block text-[#445964] p-[10px]">Sobre</a>
+
+          <a href="#portfolioSection" class="block text-[#445964] p-[10px]">Portfólio</a>
+
+          <a href="#" class="block text-[#445964] p-[10px]">Serviços</a>
+
+          <a href="#" class="block text-[#445964] p-[10px]">Resumo</a>
+
+          <a href="#" class="block text-[#445964] p-[10px]">Contato</a>
+        </div>
+      </div>
+
+      <div
+          class="w-[88px] h-[400px] fixed right-[0px] top-[40px] bg-[#fff] rounded-l-md font-semibold z-40"
+          id="pageMenuMobile"
+          style="visibility: hidden ;"
+        >
+          <div class="flex justify-end pt-[10px] pr-[10px] pb-[10px] pr-[25px]">
             <button>
               <img
                 src="public/x-mobile.svg"
@@ -74,26 +94,6 @@
             <a href="#" class="block text-[#445964] p-[10px]">Resumo</a>
           </div>
         </div>
-
-        <div
-          class="flex flex-row items-center gap-[60px] font-medium"
-          id="menuWeb"
-        >
-          <a href="#divPai" class="block text-[#445964] p-[10px] itemSelected"
-            >Home</a
-          >
-
-          <a href="#aboutSection" class="block text-[#445964] p-[10px]">Sobre</a>
-
-          <a href="#portfolioSection" class="block text-[#445964] p-[10px]">Portfólio</a>
-
-          <a href="#" class="block text-[#445964] p-[10px]">Serviços</a>
-
-          <a href="#" class="block text-[#445964] p-[10px]">Resumo</a>
-
-          <a href="#" class="block text-[#445964] p-[10px]">Contato</a>
-        </div>
-      </div>
 
       <div class="w-full flex flex-row pt-[150px]" id="divPai">
         <div
