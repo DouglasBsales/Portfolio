@@ -1,3 +1,8 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
 .closeMenu {
   position: relative;
   right: 0px;
@@ -9,4 +14,9 @@
 
 .shadow {
   box-shadow: -2px 4px 27px 4px rgba(204, 204, 204, 1);
+}
+
+.fixedMenu{
+  position: fixed; 
+  top: 0;
 }
