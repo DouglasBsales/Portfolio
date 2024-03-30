@@ -13,7 +13,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
-  <body class="font-Roboto">
+  <body class="font-Roboto bg-[#F5F5F7]">
     <!-- div abaixo do body contendo a "opacidade ao abrir o modal"-->
     <div
       class="fixed w-full h-full bg-[#191919B2] z-20"
@@ -25,7 +25,7 @@
       class="w-full max-w-[1440px] m-auto flex flex-col pl-[10px] relative z-0F"
     >
       <div
-        class="w-full flex flex-row items-center justify-between bg-[#fff] pt-[40px] pb-[40px] pl-[10px] fixedMenu border-b-2 z-10"
+        class="w-full max-w-[1440px] flex flex-row items-center justify-between bg-[#F5F5F7] pt-[40px] pb-[40px] fixedMenu border-b-2 z-10"
       >
         <div class="flex flex-row items-center">
           <img src="public/Group.svg" alt="icone" />
@@ -134,7 +134,7 @@
 
           <div>
             <button class="bg-[#263138] py-[19px] px-[31px] rounded-[20px]">
-              <a href="#" class="font-bold text-white text-2xl"
+              <a href="#aboutSection" class="font-bold text-white text-2xl"
                 >Saiba mais sobre mim</a
               >
             </button>
@@ -234,7 +234,7 @@
               <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
               <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
               <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
-              <i class="bi bi-hexagon text-[26px] text-[#DBDBDB]"></i>
+              <i class="bi bi-hexagon text-[26px] text-[#445964]"></i>
               <i class="bi bi-hexagon text-[26px] text-[#DBDBDB]"></i>
             </div>
           </div>
@@ -278,7 +278,7 @@
         </div>
         <!-- COMEÇO DOS CARDS DE PROJETOS -->
         <div
-          class="flex justify-around pt-[100px] flex-wrap pb-[200px]"
+          class="flex justify-around pt-[100px] flex-wrap gap-[265px] pb-[200px]"
           id="divCards"
         >
           <div class="w-[300px] h-[300px] items-center justify-center">
@@ -287,23 +287,42 @@
               <p class="text-[#445964] text-2xl font-semibold">iPhone</p>
             </div>
 
-            <div class="flex items-center justify-center border rounded-t-lg">
-              <img
-                src="public/calculdoraIphone.png"
-                alt="calculadoraIphone"
-                class="w-[250px]"
-              />
-            </div>
-            <div class="flex justify-center">
-              <button class="w-full bg-[#445960] rounded-b-lg">
-                <a
-                  href="https://douglasbsales.github.io/CalculadoraIphone/"
-                  target="_blank"
-                  class="block py-[10px] font-semibold text-white text-[24px]"
-                >
-                  Deploy
-                </a>
-              </button>
+            <div class="boxShadow">
+              <div class="rounded-t-lg bg-[#fff]">
+                <div class="flex items-center justify-center rounded-t-lg">
+                  <img
+                    src="public/calculdoraIphone.png"
+                    alt="calculadoraIphone"
+                    class="w-[250px]"
+                  />
+                </div>
+                <div class="flex flex-col items-center">
+                  <p class="text-sm text-center py-[10px] px-[10px]">
+                    Muitos projetos de calculadora iguais, decidi inovar
+                    refazendo o modelo utilizado no iphone com suas
+                    funcionalidades
+                  </p>
+                  <div class="pb-[20px] flex">
+                    <i class="bi bi-link-45deg"></i>
+                    <a href="https://github.com/DouglasBsales/CalculadoraIphone" 
+                    target="_blank"
+                    class="text-center font-bold text-[#445960]"
+                      >Repositório</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center">
+                <button class="w-full bg-[#445960] rounded-b-lg">
+                  <a
+                    href="https://douglasbsales.github.io/CalculadoraIphone/"
+                    target="_blank"
+                    class="block py-[10px] font-semibold text-white text-[24px]"
+                  >
+                    Deploy
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
 
@@ -313,23 +332,42 @@
               <p class="text-[#445964] text-2xl font-semibold">Usuários</p>
             </div>
 
-            <div class="flex items-center justify-center border rounded-t-lg">
-              <img
-                src="public/FORMULARIO.png"
-                alt="fotoCriacaoConta"
-                class="w-[250px]"
-              />
-            </div>
-            <div class="flex justify-center">
-              <button class="w-full bg-[#445960] rounded-b-lg">
-                <a
-                  href="https://douglasbsales.github.io/Creat-a-new-account-Form/"
-                  target="_blank"
-                  class="block py-[10px] font-semibold text-white text-[24px]"
-                >
-                  Deploy
-                </a>
-              </button>
+            <div class="boxShadow">
+              <div class="rounded-t-lg bg-[#fff]">
+                <div class="flex items-center justify-center rounded-t-lg">
+                  <img
+                    src="public/FORMULARIO.png"
+                    alt="fotoCriacaoConta"
+                    class="w-[250px]"
+                  />
+                </div>
+                <div class="flex flex-col items-center">
+                  <p class="text-sm text-center py-[10px] px-[10px]">
+                    Formulário para verificação de dados passados pelo usuário
+                    para criação de uma conta na possível plataforma
+                  </p>
+                  <div class="pb-[20px] flex">
+                    <i class="bi bi-link-45deg"></i>
+                    <a
+                      href="https://github.com/DouglasBsales/Creat-a-new-account-Form"
+                      target="_blank"
+                      class="text-center font-bold text-[#445960]"
+                      >Repositório</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center">
+                <button class="w-full bg-[#445960] rounded-b-lg">
+                  <a
+                    href="https://douglasbsales.github.io/Creat-a-new-account-Form/"
+                    target="_blank"
+                    class="block py-[10px] font-semibold text-white text-[24px]"
+                  >
+                    Deploy
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
 
@@ -339,19 +377,42 @@
               <p class="text-[#445964] text-2xl font-semibold">Usuários</p>
             </div>
 
-            <div class="flex items-center justify-center border rounded-t-lg">
-              <img src="public/userAdd.png" alt="IconUser" class="w-[250px]" />
-            </div>
-            <div class="flex justify-center">
-              <button class="w-full bg-[#445960] rounded-b-lg">
-                <a
-                  href="https://douglasbsales.github.io/UserRegistration/"
-                  target="_blank"
-                  class="block py-[10px] font-semibold text-white text-[24px]"
-                >
-                  Deploy
-                </a>
-              </button>
+            <div class="boxShadow">
+              <div class="rounded-t-lg bg-[#fff]">
+                <div class="flex items-center justify-center rounded-t-lg">
+                  <img
+                    src="public/userAdd.png"
+                    alt="IconUser"
+                    class="w-[250px]"
+                  />
+                </div>
+                <div class="flex flex-col items-center">
+                  <p class="text-sm text-center py-[10px] px-[10px]">
+                    O usuário consegue adicionar e remover usuários de uma lista
+                    onde o mesmo possui esse controle.
+                  </p>
+                  <div class="pb-[20px] flex">
+                    <i class="bi bi-link-45deg"></i>
+                    <a
+                      href="https://github.com/DouglasBsales/UserRegistration"
+                      class="text-center font-bold text-[#445960]"
+                      target="_blank"
+                      >Repositório</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center">
+                <button class="w-full bg-[#445960] rounded-b-lg">
+                  <a
+                    href="https://douglasbsales.github.io/UserRegistration/"
+                    target="_blank"
+                    class="block py-[10px] font-semibold text-white text-[24px]"
+                  >
+                    Deploy
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
 
@@ -361,23 +422,138 @@
               <p class="text-[#445964] text-2xl font-semibold">Cronômetro</p>
             </div>
 
-            <div class="flex items-center justify-center border rounded-t-lg">
-              <img
-                src="public/TIMER.png"
-                alt="Timer"
-                class="w-[250px] h-[250px]"
-              />
+            <div class="boxShadow">
+              <div class="rounded-t-lg bg-[#fff]">
+                <div class="flex items-center justify-center rounded-t-lg">
+                  <img
+                    src="public/TIMER.png"
+                    alt="Timer"
+                    class="w-[250px] h-[250px]"
+                  />
+                </div>
+                <div class="flex flex-col items-center">
+                  <p class="text-sm text-center py-[10px] px-[10px]">
+                    O usuário consegue selecionar o tempo desejado que seja
+                    contado no cronometro atráves das configurações do
+                    cronômetro no canto superior direito
+                  </p>
+                  <div class="pb-[20px] flex">
+                    <i class="bi bi-link-45deg"></i>
+                    <a
+                      href="https://github.com/DouglasBsales/Timer"
+                      class="text-center font-bold text-[#445960]"
+                      target="_blank"
+                      >Repositório</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center">
+                <button class="w-full bg-[#445960] rounded-b-lg">
+                  <a
+                    href="https://douglasbsales.github.io/Timer/"
+                    target="_blank"
+                    class="block py-[10px] font-semibold text-white text-[24px]"
+                  >
+                    Deploy
+                  </a>
+                </button>
+              </div>
             </div>
-            <div class="flex justify-center">
-              <button class="w-full bg-[#445960] rounded-b-lg">
-                <a
-                  href="https://douglasbsales.github.io/Timer/"
-                  target="_blank"
-                  class="block py-[10px] font-semibold text-white text-[24px]"
-                >
-                  Deploy
-                </a>
-              </button>
+          </div>
+
+          <div class="w-[300px] h-[300px] items-center justify-center">
+            <div class="flex flex-col items-center pb-[10px]">
+              <p class="text-[#4E4E4E] font-bold text-4xl">Busca de</p>
+              <p class="text-[#445964] text-2xl font-semibold">
+                Usuários GitHub
+              </p>
+            </div>
+
+            <div class="boxShadow">
+              <div class="rounded-t-lg bg-[#fff]">
+                <div class="flex items-center justify-center rounded-t-lg">
+                  <img
+                    src="public/github.png"
+                    alt="GitHub"
+                    class="w-[250px] h-[250px]"
+                  />
+                </div>
+                <div class="flex flex-col items-center">
+                  <p class="text-sm text-center py-[10px] px-[10px]">
+                    Nesta aplicação conseguimos recuperar informações de
+                    usuários do GitHub, como: <br />
+                    <strong>Informacoes de perfil</strong> <br />
+                    <strong>Repositórios</strong>
+                  </p>
+                  <div class="pb-[20px] flex">
+                    <i class="bi bi-link-45deg"></i>
+                    <a
+                      href="https://github.com/DouglasBsales/UserGithub"
+                      target="_blank"
+                      class="text-center font-bold text-[#445960]"
+                      >Repositório</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center">
+                <button class="w-full bg-[#445960] rounded-b-lg">
+                  <a
+                    href="https://douglasbsales.github.io/UserGithub/"
+                    target="_blank"
+                    class="block py-[10px] font-semibold text-white text-[24px]"
+                  >
+                    Deploy
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[300px] h-[300px] items-center justify-center">
+            <div class="flex flex-col items-center pb-[10px]">
+              <p class="text-[#4E4E4E] font-bold text-4xl">Previsão</p>
+              <p class="text-[#445964] text-2xl font-semibold">do tempo</p>
+            </div>
+
+            <div class="boxShadow">
+              <div class="rounded-t-lg bg-[#fff]">
+                <div class="flex items-center justify-center rounded-t-lg">
+                  <img
+                    src="public/Storm.png"
+                    alt="Timer"
+                    class="w-[250px] h-[250px]"
+                  />
+                </div>
+                <div class="flex flex-col items-center">
+                  <p class="text-sm text-center py-[10px] px-[10px]">
+                    O usuário consegue acessar as condições climáticas de
+                    qualquer cidade do mundo com intervalos de 01h00 através
+                    dessa aplicação
+                  </p>
+                  <div class="pb-[20px] flex">
+                    <i class="bi bi-link-45deg"></i>
+                    <a
+                      href="https://github.com/DouglasBsales/searchWeather"
+                      target="_blank"
+                      class="text-center font-bold text-[#445960]"
+                      >Repositório</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center">
+                <button class="w-full bg-[#445960] rounded-b-lg">
+                  <a
+                    href="https://douglasbsales.github.io/searchWeather/"
+                    target="_blank"
+                    class="block py-[10px] font-semibold text-white text-[24px]"
+                  >
+                    Deploy
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
