@@ -1,5 +1,4 @@
-
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -16,7 +15,11 @@ html{
   box-shadow: -2px 4px 27px 4px rgba(204, 204, 204, 1);
 }
 
-.fixedMenu{
-  position: fixed; 
+.fixedMenu {
+  position: fixed;
   top: 0;
+}
+
+.boxShadow{
+  box-shadow: 2px 4px 12px #00000014;
 }
